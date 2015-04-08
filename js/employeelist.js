@@ -1,4 +1,4 @@
-var serviceURL = "http://localhost/directory/services/";
+var serviceURL = "http://demo.batiactu.info/webServiceAndreas/";
 
 var employees;
 
@@ -7,7 +7,7 @@ $('#employeeListPage').bind('pageinit', function(event) {
 });
 
 function getEmployeeList() {
-	$.getJSON(serviceURL + 'demo.batiactu.info/webServiceAndreas/getemployees.php', function(data) {
+	$.getJSON(serviceURL + 'getemployees.php', function(data) {
 		$('#employeeList li').remove();
 		employees = data.items;
 		$.each(employees, function(index, employee) {
