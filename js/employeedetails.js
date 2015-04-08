@@ -1,6 +1,6 @@
 $('#detailsPage').live('pageshow', function(event) {
 	var id = getUrlVars()["id"];
-	$.getJSON(serviceURL + 'demo.batiactu.info/webServiceAndreas/getemployee.php?id='+id, displayEmployee);
+	$.getJSON(serviceURL + 'getemployee.php?id='+id, displayEmployee);
 });
 
 function displayEmployee(data) {
